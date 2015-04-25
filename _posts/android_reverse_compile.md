@@ -17,6 +17,8 @@ categories: [security, android]
 * [jd-gui](http://java.decompiler.free.fr/?q=jdgui) - 查看 jar 源码文件
 * [dex2jar](https://code.google.com/p/dex2jar/) - 把 dex 转换成 jar
 
+<!-- more -->
+
 ## 原理
 
 首先把 apk 文件解压缩，然后提取其中的 .dex 文件，用 dex2jar 把 dex 文件转成 jar 文件，这样就可以用 jd-gui 打开 jar 文件，查看具体的 java 源码了。然后定位要修改的地方，再用 apktool 把 apk 文件转换成 dalvik 的中间码，定位到之前要修改的位置，然后修改保存，再用 apktool 重新打包成 apk 文件。最后一步，用 jarsigner 给前面生成的 apk 文件签名，这样就可以把咱重新制作的 apk 安装到 android 系统上了。

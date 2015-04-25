@@ -12,6 +12,8 @@ MD5 算法的标准文件见 [RFC1321](http://www.ietf.org/rfc/rfc1321.txt)。�
 
 > In this document a "word" is a 32-bit quantity and a "byte" is an eight-bit quantity. A sequence of bits can be interpreted in a natural manner as a sequence of bytes, where each consecutive group of eight bits is interpreted as a byte with the high-order (most significant) bit of each byte listed first. Similarly, a sequence of bytes can be interpreted as a sequence of 32-bit words, where each consecutive group of four bytes is interpreted as a word with the low-order (least significant) byte given first.
 
+<!-- more -->
+
 翻译过来，就是说在 MD5 算法中一个字节内是按 MSB 存储的，在一个字内是按 LSB 存储的。
 
 例如：

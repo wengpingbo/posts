@@ -17,6 +17,8 @@ const int n=10;
 int a[n]; //error
 ```
 
+<!-- more -->
+
 const 总是修饰离它最近的对象，比如：
 
 ```

@@ -11,6 +11,8 @@ categories: linux
 
 不管我们是打开一个文件，接收一个socket包，还是获取当前进程信息，都需要调用内核给我们提供的API。这里，我们可以通过strace这个工具，来跟踪一个程序调用的系统函数。比如下面是命令"strace whoami"的输出结果：
 
+<!-- more -->
+
 ```
 execve("/usr/bin/whoami", ["whoami"], [/* 65 vars */]) = 0
 brk(0)                                  = 0x100f000

@@ -12,6 +12,8 @@ scope，字面意思就是范围。IBM 对 C 和 C++ 语言的[定义文档](htt
 
 > The scope of an identifier is the largest region of the program text in which the identifier can potentially be used to refer to its object. In C++, the object being referred to must be unique. However, the name to access the object, the identifier itself, can be reused. The meaning of the identifier depends upon the context in which the identifier is used. Scope is the general context used to distinguish the meanings of names.
 
+<!-- more -->
+
 意思就是，标识符的 scope 是在程序上下文中，用来确定，该标识符是对应与哪个 object 的。其实说白了，就是在程序中，一个变量只能有一个定义，但可以有多个声明，那么每个声明是对应与那个具体的变量的呢？ 就是靠 scope 来确定。
 
 在 C 和 C++ 语言中，有多种 scope，具体如下：

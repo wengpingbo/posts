@@ -16,6 +16,8 @@ categories: android
 ```
 估计都懂了。
 
+<!-- more -->
+
 ## Android 5.1 Sensor HAL
 
 好！进入正题！

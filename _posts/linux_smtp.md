@@ -11,6 +11,8 @@ categories: linux
 
 下面所有步骤，全部基于 CentOS 6.3，其他发行版本类似。
 
+<!-- more -->
+
 ## 安装mail
 
 ```

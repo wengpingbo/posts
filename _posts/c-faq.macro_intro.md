@@ -15,6 +15,8 @@ categories: [language, c]
 #define PRINT(int) printf("PRINT: %d", int)
 ```
 
+<!-- more -->
+
 函数式宏还支持变长参数，比如：
 
 ```

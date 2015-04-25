@@ -10,6 +10,8 @@ ADB(Android Debug Bridge) 是 Google 为了调试 Android 设备和 Android 模�
 
 在我们平常的开发中，可能会碰到一些 Android 设备无法通过 adb 去连接。这里分析两种常见的连接错误。
 
+<!-- more -->
+
 ## 设备找不到(device not found)
 这种情况，一般现象是我们已经用USB把Android设备和主机连接在一起，但`adb devices`却无法正常识别该设备。但是通过`lsusb`命令却又能够看到该USB设备。
 

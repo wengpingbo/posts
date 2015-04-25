@@ -10,6 +10,8 @@ categories: [linux, qemu]
 ## 环境搭建
 在实现我们的目标之前，我们需要搭建自己的工作环境。在这里，假设你的主机上已经有 gcc 本地编译环境，并运行 Ubuntu 12.10。但是这并不影响在其他的 linux 平台上进行，只要修改一下对应的命令就可以了。
 
+<!-- more -->
+
 首先，我们需要下载一个 ARM 交叉工具链。你可以在网上下载源码自己编译，也可以下载已经编译好的工具链。在工具链中有基本的 ARM 编译工具，比如：gcc, gdb, addr2line, nm, objcopy, objdump 等。可能你会问，这些工具本机不是已经有了么？如果不出意外，我想你的主机应该是 x86 架构的。不同的架构，有不同的指令集，你不能拿一个 x86 的执行文件放到一个 ARM 机器上执行。所以我们需要一个能够在 x86 架构上生成 ARM 可执行程序的 GCC 编译器。有很多预先编译好的 ARM 工具链，这里使用的是 [CodeSourcery](https://sourcery.mentor.com/GNUToolchain/release2449) 。更多关于 toolchain 的信息可以在 [elinux.org](http://elinux.org/Toolchains) 找到 。下载下来后，直接解压，放到某个目录，然后配置一下 PATH 环境变量，这里是这样配置的：
 
 ```

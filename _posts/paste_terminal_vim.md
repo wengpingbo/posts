@@ -13,6 +13,8 @@ categories: linux
 set clipboard=unamedplus
 ```
 
+<!-- more -->
+
 这行配置的意思是让 VIM 把 `+` 这个寄存器(粘贴板)设置为平常 yank 和 p 操作的默认粘贴板，而 `+` 寄存器在 VIM 里就是代表 X Window 的粘贴板。这样我们就让 VIM 和 X Window 共享一个粘贴板，再也不用担心 VIM 里复制的东西，不能在 VIM 外去粘贴。
 
 但是这里要注意，如果你下载的是基本 VIM 的话，按照上面的设置是无法实现预期的效果的。因为 VIM 基本版默认不支持 X Window 的粘贴板，所以你得安装 VIM 完全版，或者巨型版。你可以执行如下命令去判断你的 VIM 是否支持 X Window 的粘贴板：

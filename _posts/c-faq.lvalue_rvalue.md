@@ -12,6 +12,8 @@ categories: [language, c]
 
 > An object is a region of storage that can be examined and stored into. An lvalue is an expression that refers to such an object.
 
+<!-- more -->
+
 也就是说 lvalue 是一个表达式，且指向一个可读写的存储区域。而 rvalue，可以为任何表达式。
 
 lvalue 和 rvalue 的取名，是来自于一个赋值表达式中的。对于一个合法的赋值表达式：

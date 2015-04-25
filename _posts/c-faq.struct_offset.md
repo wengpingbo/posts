@@ -15,6 +15,8 @@ categories: [language, c]
 
 首先，咱看一下 offsetof 这个 ANSI C 定义的宏，它是专门用来计算 struct 或者 union 类型成员的偏移量的。它的定义在 stddef.h 这个头文件中，用法很简单，给个例子就明白了：
 
+<!-- more -->
+
 ```
 struct test {
 	char c;

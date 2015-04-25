@@ -12,6 +12,8 @@ sizeof 是 C 中的一个关键字，用来计算类型或者表达式的大小�
 Error： invalid application of ‘sizeof’ to incomplete type ‘int[]’
 ```
 
+<!-- more -->
+
 例子如下：
 
 ```
