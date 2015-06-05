@@ -82,6 +82,8 @@ done
 
 这里在 for 循环中打印三角形，然后用 `\e[20F` 向上移动 20 行，再继续打印三角形。而 `\e[38;5;$((RANDOM % 256))m` 会在 256 中颜色中随机选择一种颜色。来看一下具体效果：
 
+<iframe src="http://showterm.io/3f1083e4211e37bd25fdd" width="640" height="400"></iframe>
+
 如果你喜欢《黑客帝国》，可以安装 cmatrix(apt-get install cmatrix)，体验一下字符刷屏的效果。如果你是《星球大战》的粉丝，可以运行一下这个命令 `telnet towel.blinkenlights.nl`，体验一下字符界面下的电影。如果你想要震撼的效果，字符界面下的分形图像，可以运行 `bb(apt-get install bb)`。
 
 另外，如果你想把自己的文字变的很绚丽，可以试一下 toilet，你没看错，就这名字。
